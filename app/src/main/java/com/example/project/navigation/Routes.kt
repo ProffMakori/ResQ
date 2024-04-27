@@ -1,0 +1,16 @@
+package com.example.project.navigation
+
+const val HOME_URL = "home"
+const val SIGNUP_URL = "signup"
+const val LOGIN_URL = "login"
+const val ADMIN_URL = "admin"
+const val FIRSTAID_URL = "firstaid"
+const val NOTIFICATIONS_URL = "notifications"
+const val SETTINGS_URL = "settings"
+const val SPLASH_URL = "splash"
+const val TRACKER_URL = "tracker"
+const val TRAINING_URL = "training"
+const val VIDEOS_URL = "videos"
+const val DASHBOARD_URL = "dashboard"
+const val ADD_PRODUCTS_URL = "add_products"
+const val VIEW_PRODUCTS_URL = "view_products"

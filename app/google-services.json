@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588240752840",
+    "project_id": "wazito-ecommerce-7cac4",
+    "storage_bucket": "wazito-ecommerce-7cac4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588240752840:android:b78d8a8c07c9317c4015fd",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU7DabpnTjRUKPtKKapIpF85e_McLVZxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
