@@ -28,7 +28,8 @@ import androidx.navigation.compose.rememberNavController
 import coil.compose.rememberAsyncImagePainter
 import com.example.project.data.ProductViewModel
 import com.example.project.models.Product
-import com.example.project.ui.theme.WazitoECommerceTheme
+import com.example.project.ui.theme.ResQTheme
+
 
 @Composable
 fun ViewProductsScreen(navController:NavHostController) {
@@ -105,7 +106,7 @@ fun ProductItem(name:String, quantity:String, price:String, id:String,
 @Composable
 @Preview(showBackground = true)
 fun ViewProductsScreenPreview(){
-    WazitoECommerceTheme {
+    ResQTheme {
         ViewProductsScreen(navController = rememberNavController())
     }
 }

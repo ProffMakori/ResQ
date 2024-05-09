@@ -18,7 +18,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.project.navigation.ADD_PRODUCTS_URL
 import com.example.project.navigation.VIEW_PRODUCTS_URL
-import com.example.project.ui.theme.WazitoECommerceTheme
+import com.example.project.ui.theme.ResQTheme
+
 
 @Composable
 fun HomeScreen(navController:NavHostController){
@@ -50,7 +51,7 @@ fun HomeScreen(navController:NavHostController){
 @Composable
 @Preview(showBackground = true)
 fun HomeScreenPreview(){
-    WazitoECommerceTheme {
+    ResQTheme {
         HomeScreen(navController = rememberNavController())
     }
 }

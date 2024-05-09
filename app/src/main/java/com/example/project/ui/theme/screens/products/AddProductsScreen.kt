@@ -35,7 +35,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.project.data.ProductViewModel
-import com.example.project.ui.theme.WazitoECommerceTheme
+import com.example.project.ui.theme.ResQTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -150,7 +150,7 @@ fun ImagePicker(modifier: Modifier = Modifier, context: Context,navController: N
 @Composable
 @Preview(showBackground = true)
 fun AddProductsScreenPreview(){
-    WazitoECommerceTheme {
+    ResQTheme {
         AddProductsScreen(navController = rememberNavController())
     }
 }

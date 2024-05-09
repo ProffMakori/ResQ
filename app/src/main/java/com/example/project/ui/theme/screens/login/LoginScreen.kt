@@ -27,7 +27,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.project.data.AuthViewModel
 import com.example.project.navigation.SIGNUP_URL
-import com.example.project.ui.theme.WazitoECommerceTheme
+import com.example.project.ui.theme.ResQTheme
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -88,7 +89,9 @@ fun LoginScreen(navController:NavHostController){
 @Composable
 @Preview(showBackground = true)
 fun LoginScreenPreview(){
-    WazitoECommerceTheme {
+    ResQTheme {
         LoginScreen(navController = rememberNavController())
     }
 }
+
+

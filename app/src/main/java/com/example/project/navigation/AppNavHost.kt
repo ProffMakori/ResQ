@@ -12,13 +12,11 @@ import com.example.project.ui.theme.screens.login.LoginScreen
 import com.example.project.ui.theme.screens.products.AddProductsScreen
 import com.example.project.ui.theme.screens.products.ViewProductsScreen
 import com.example.project.ui.theme.screens.signup.SignupScreen
+import com.example.project.ui.theme.screens.splash.SplashScreen
 
 @Composable
-fun AppNavHost(
-    modifier: Modifier = Modifier,
-    navController:NavHostController = rememberNavController(),
-    startDestination:String = LOGIN_URL
-){
+fun AppNavHost(modifier: Modifier = Modifier, navController:NavHostController = rememberNavController(), startDestination:String = SPLASH_URL)
+{
     NavHost(
         navController = navController,
         startDestination = startDestination,
@@ -40,6 +38,9 @@ fun AppNavHost(
         }
         composable(DASHBOARD_URL){
             DashboardScreen(navController = navController)
+        }
+        composable(SPLASH_URL){
+            SplashScreen(navController = navController)
         }
     }
 }
