@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -26,10 +25,10 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.project.data.AuthViewModel
+import com.example.project.navigation.DASHBOARD_URL
 import com.example.project.navigation.LOGIN_URL
 import com.example.project.ui.theme.ResQTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SignupScreen(navController:NavHostController){
     Column(
@@ -88,14 +87,19 @@ fun SignupScreen(navController:NavHostController){
             Text(text = "Register")
         }
 
-        Spacer(modifier = Modifier.height(30.dp))
 
         Button(onClick = {
             navController.navigate(LOGIN_URL)
         }) {
-            Text(text = "Login instead")
+            Text(text = "Login ")
         }
+        Spacer(modifier = Modifier.height(40.dp))
 
+        Button(onClick = {
+            navController.navigate(DASHBOARD_URL)
+        }) {
+            Text(text = "Join As Guest")
+        }
     }
 }
 

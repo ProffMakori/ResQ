@@ -34,17 +34,7 @@ fun HomeScreen(navController:NavHostController){
             fontFamily = FontFamily.Cursive
         )
         Spacer(modifier = Modifier.height(30.dp))
-        Button(onClick = {
-            navController.navigate(ADD_PRODUCTS_URL)
-        }) {
-            Text(text = "Add Products")
-        }
-        Spacer(modifier = Modifier.height(30.dp))
-        Button(onClick = {
-            navController.navigate(VIEW_PRODUCTS_URL)
-        }) {
-            Text(text = "View Products")
-        }
+
     }
 }
 
